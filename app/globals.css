@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0A0A0A;
+  --foreground: #FFFFFF;
+  --navy: #001F3F;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.projects-swiper {
+  padding-bottom: 70px !important;
+  padding-top: 10px !important;
+}
+
+.projects-swiper .swiper-slide {
+  height: auto;
+}
+
+.projects-swiper .swiper-button-next,
+.projects-swiper .swiper-button-prev {
+  color: #001F3F !important;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 31, 63, 0.3);
+  transition: all 0.3s ease;
+}
+
+.projects-swiper .swiper-button-next:hover,
+.projects-swiper .swiper-button-prev:hover {
+  background: rgba(0, 31, 63, 0.9);
+  color: white !important;
+  transform: scale(1.15);
+  border-color: #001F3F;
+}
+
+.projects-swiper .swiper-button-next::after,
+.projects-swiper .swiper-button-prev::after {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.projects-swiper .swiper-pagination-bullet {
+  background: #001F3F;
+  opacity: 0.5;
+  width: 14px;
+  height: 14px;
+  transition: all 0.3s ease;
+}
+
+.projects-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  transform: scale(1.4);
+  background: linear-gradient(135deg, #001F3F 0%, #0047AB 100%);
+}
