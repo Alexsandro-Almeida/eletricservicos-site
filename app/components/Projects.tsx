@@ -192,7 +192,7 @@ export default function Projects() {
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={40}
-            slidesPerView={3}
+            slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
             autoplay={{ delay: 5000, disableOnInteraction: false }}
