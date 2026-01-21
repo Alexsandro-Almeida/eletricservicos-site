@@ -56,7 +56,7 @@ const visitasData = [
   },
   {
     id: 8,
-    image: '/assets/visitas/galary20.jpg',
+    image: '/assets/visitas/galary20.jpeg',
     title: '',
     description: '',
     date: '',
